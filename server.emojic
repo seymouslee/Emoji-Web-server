@@ -32,7 +32,7 @@
                     🐽 request_list 1❗️ ➡️ requested_file
 
                     💭 preparing file directory
-                    🔤./webroot🧲requested_file🧲🔤 ➡️ file_location
+                    🔤webroot🧲requested_file🧲🔤 ➡️ file_location
 
                     💭 default directory points to webroot/index.html
                     ↪️ file_location 🙌 🔤./webroot/🔤🍇
