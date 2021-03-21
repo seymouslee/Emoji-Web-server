@@ -1,0 +1,68 @@
+💭 emojicodec server.emojic
+💭 GET / HTTP/1.1
+
+📦 sockets 🏠
+📦 files 🏠
+
+🏁 🍇
+
+    🔤HTTP/1.1 200 OK❌r❌n❌r❌n🔤 ➡️  sucessMsg
+    🔤HTTP/1.1 404 Not Found❌r❌n❌r❌n🔤 ➡️  errorMsg
+    🖍🆕 file_location 🔡
+    🖍🆕 nfile_location 🔡
+
+    💭 initialise a port that listens to port 8888
+    🍺🆕🏄 8888❗️ ➡️ server
+
+    💭 while true
+    🔁 👍 🍇
+
+        🍺 🙋 server❗️ ➡️ clientSocket
+
+        🔁 👍 🍇
+            🆗 data 👂 clientSocket 1000❗️ 🍇
+
+                😀 🔤🧲🍺 🔡data❗️🧲🔤❗️
+                
+                💭 split data into list
+                🔫 🍺🔡data❗️ 🔤 🔤 ❗️ ➡️ request_list
+
+                ↪️ 📏request_list❓▶️🙌 3 🍇
+
+                    💭 assign list values to variables
+                    🐽 request_list 0❗️ ➡️ msg_type
+                    🐽 request_list 1❗️ ➡️ file_location
+                    🐽 request_list 2❗️ ➡️ http_ver
+
+                    🍺📇🐇📄 🔤index.html🔤❗️➡️ webpage
+
+                    🔤🧲 🔡sucessMsg❗️🧲🧲🍺 🔡webpage❗️🧲🔤 ➡️ response
+                    😀 🔤🧲 🔡 response❗️🧲🔤❗️
+
+
+                    🆗 💬 clientSocket 📇 response ❗️❗️🍇
+                    🍉
+                    🙅 error 🍇
+                        😀 🔤An error occured: 🧲💬error❗️🧲🔤❗️
+                        🆗 💬 clientSocket 📇 errorMsg ❗️❗️🍇
+                        🍉
+                        🙅 error 🍇
+                            💭😀 🔤An error occured: 🧲💬error❗️🧲🔤❗️
+                        🍉
+                    🍉
+                🍉
+                💭🔜
+                💭 elif request < 3
+                🙅 🍇
+                    😀🔤Check your request headers🔤❗️
+                    ↩️↩️
+                🍉
+                🔚💭
+
+            🍉
+            🙅‍♀️ error 🍇
+                😀 🔤An error occured: 🧲💬error❗️🧲🔤❗️
+            🍉
+        🍉 
+    🍉
+🍉
