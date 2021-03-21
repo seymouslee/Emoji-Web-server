@@ -34,19 +34,18 @@
                     🐽 request_list 1❗️ ➡️ file_location
                     🐽 request_list 2❗️ ➡️ http_ver
 
+                
                     💭 preparing file directory
-                    🔤/webroot🧲file_location🧲🔤 ➡️ nfile_location                
-                    ↪️ nfile_location 🙌 🔤/webroot/🔤🍇
-                        🔤.🧲nfile_location🧲index.html🔤 ➡️ nfile_location
+                    🔤./webroot🧲file_location🧲🔤 ➡️ nfile_location                
+                    ↪️ nfile_location 🙌 🔤./webroot/🔤🍇
+                        🔤🧲nfile_location🧲index.html🔤 ➡️ nfile_location
                         😀 🔤🧲nfile_location🧲🔤❗️
                     🍉
 
                     💭 read file from directory
                     💭🍺🆕📄▶️📜 🔤🧲nfile_location🧲🔤❗️ ➡️ webpage
-                    🍺📇🐇📄 🔤nfile_location🔤❗️➡️ webpage
+                    🍺📇🐇📄 🔤🧲nfile_location🧲🔤❗️➡️ webpage
                     😀 🔤🧲🍺 🔡webpage❗️🧲🔤❗️
-
-
 
                     🆗 💬 clientSocket 📇 sucessMsg ❗️❗️🍇
                     🍉
