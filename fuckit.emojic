@@ -9,6 +9,8 @@
     🔤HTTP/1.1 200 OK❌r❌n❌r❌n🔤 ➡️  sucessMsg
     🔤HTTP/1.1 404 Not Found❌r❌n❌r❌n🔤 ➡️  errorMsg
 
+    🍺📇🐇📄 🔤webroot/error.html🔤❗️➡️ errorpage
+
     💭 initialise a port that listens to port 8888
     🍺🆕🏄 8888❗️ ➡️ server
 
@@ -25,7 +27,12 @@
                 💭 split data into list
                 🔫 🍺🔡data❗️ 🔤 🔤 ❗️ ➡️ request_list
 
-                ↪️ 📏request_list❓▶️🙌 3 🍇
+                ↪️ 📏request_list❓◀️🙌 3 🍇
+                    🔤🧲 🔡errorMsg❗️🧲🧲🍺 🔡errorpage❗️🧲🔤 ➡️ response
+                    😀 🔤🧲 🔡 response❗️🧲🔤❗️
+                    😀🔤Check your request headers🔤❗️
+                🍉
+                🙅 🍇
 
                     💭 assign list values to variables
                     🐽 request_list 1❗️ ➡️ requested_file
@@ -57,14 +64,6 @@
                         🍉
                     🍉
                 🍉
-                💭🔜
-                💭 elif request < 3
-                🙅 🍇
-                    😀🔤Check your request headers🔤❗️
-                    ↩️↩️
-                🍉
-                🔚💭
-
             🍉
             🙅‍♀️ error 🍇
                 😀 🔤An error occured: 🧲💬error❗️🧲🔤❗️
