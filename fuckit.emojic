@@ -8,6 +8,7 @@
 
     🔤HTTP/1.1 200 OK❌r❌n❌r❌n🔤 ➡️  sucessMsg
     🔤HTTP/1.1 404 Not Found❌r❌n❌r❌n🔤 ➡️  errorMsg
+    
 
     🍺📇🐇📄 🔤webroot/error.html🔤❗️➡️ errorpage
 
@@ -46,11 +47,20 @@
                     🍉
 
                     😀 🔤🧲file_location🧲🔤❗️
+                    🖍🆕response 🔡
+                    📃🕊📑🔤🧲file_location🧲🔤❗️➡️check
+                    
+                    ↪️check🍇
+                        🍺📇🐇📄 🔤🧲file_location🧲🔤❗️➡️ webpage
 
-                    🍺📇🐇📄 🔤🧲file_location🧲🔤❗️➡️ webpage
-
-                    🔤🧲 🔡sucessMsg❗️🧲🧲🍺 🔡webpage❗️🧲🔤 ➡️ response
-                    😀 🔤🧲 🔡 response❗️🧲🔤❗️
+                        🔤🧲 🔡sucessMsg❗️🧲🧲🍺 🔡webpage❗️🧲🔤 ➡️ 🖍response
+                        😀 🔤🧲 🔡 response❗️🧲🔤❗️
+                    🍉
+                    🙅 🍇
+                        🔤🧲 🔡errorMsg❗️🧲🧲🍺 🔡errorpage❗️🧲🔤 ➡️ 🖍response
+                        😀 🔤🧲 🔡 response❗️🧲🔤❗️
+                        😀🔤Check your request headers🔤❗️
+                    🍉
 
 
                     🆗 💬 clientSocket 📇 response ❗️❗️🍇
