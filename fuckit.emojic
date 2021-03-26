@@ -8,8 +8,6 @@
 
     🔤HTTP/1.1 200 OK❌r❌n❌r❌n🔤 ➡️  sucessMsg
     🔤HTTP/1.1 404 Not Found❌r❌n❌r❌n🔤 ➡️  errorMsg
-    🖍🆕 file_location 🔡
-    🖍🆕 nfile_location 🔡
 
     💭 initialise a port that listens to port 8888
     🍺🆕🏄 8888❗️ ➡️ server
@@ -30,11 +28,19 @@
                 ↪️ 📏request_list❓▶️🙌 3 🍇
 
                     💭 assign list values to variables
-                    🐽 request_list 0❗️ ➡️ msg_type
-                    🐽 request_list 1❗️ ➡️ file_location
-                    🐽 request_list 2❗️ ➡️ http_ver
+                    🐽 request_list 1❗️ ➡️ requested_file
 
-                    🍺📇🐇📄 🔤index.html🔤❗️➡️ webpage
+                    💭 preparing file directory
+                    🔤webroot🧲requested_file🧲🔤 ➡️ 🖍🆕file_location
+
+                    💭 default directory points to webroot/index.html
+                    ↪️ file_location 🙌 🔤webroot/🔤🍇
+                        🔤🧲file_location🧲index.html🔤 ➡️ 🖍file_location
+                    🍉
+
+                    😀 🔤🧲file_location🧲🔤❗️
+
+                    🍺📇🐇📄 🔤🧲file_location🧲🔤❗️➡️ webpage
 
                     🔤🧲 🔡sucessMsg❗️🧲🧲🍺 🔡webpage❗️🧲🔤 ➡️ response
                     😀 🔤🧲 🔡 response❗️🧲🔤❗️
