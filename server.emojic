@@ -3,83 +3,85 @@
 
 📦 sockets 🏠
 📦 files 🏠
+📦 json 🏠
 
 🏁 🍇
 
     🔤HTTP/1.1 200 OK❌r❌n❌r❌n🔤 ➡️  sucessMsg
     🔤HTTP/1.1 404 Not Found❌r❌n❌r❌n🔤 ➡️  errorMsg
-    🖍🆕 file_location 🔡
+    
+
+    🍺📇🐇📄 🔤webroot/error.html🔤❗️➡️ errorpage
 
     💭 initialise a port that listens to port 8888
     🍺🆕🏄 8888❗️ ➡️ server
+
+    😀🔤[Sucess] Running on port 8888🔤❗️
 
     💭 while true
     🔁 👍 🍇
 
         🍺 🙋 server❗️ ➡️ clientSocket
+        
+        🆗 data 👂 clientSocket 1000❗️ 🍇
 
-        🔁 👍 🍇
-            🆗 data 👂 clientSocket 1000❗️ 🍇
+            😀🔤[Sucess] Request received.🔤❗️
+            💭😀 🔤🧲🍺 🔡data❗️🧲🔤❗️
+            
+            💭 split data into list
+            🔫 🍺🔡data❗️ 🔤 🔤 ❗️ ➡️ request_list
 
-                😀 🔤🧲🍺 🔡data❗️🧲🔤❗️
+            ↪️ 📏request_list❓◀️🙌 3 🍇
+                🔤🧲 🔡errorMsg❗️🧲🧲🍺 🔡errorpage❗️🧲🔤 ➡️ response
+                💭😀 🔤🧲 🔡 response❗️🧲🔤❗️
+                😀🔤[Error]  Check your request headers!🔤❗️
+            🍉
+            🙅 🍇
+
+                💭 assign list values to variables
+                🐽 request_list 1❗️ ➡️ requested_file
+
+                💭 preparing file directory
+                🔤webroot🧲requested_file🧲🔤 ➡️ 🖍🆕file_location
+
+                💭 default directory points to webroot/index.html
+                ↪️ file_location 🙌 🔤webroot/🔤🍇
+                    🔤🧲file_location🧲index.html🔤 ➡️ 🖍file_location
+                🍉
+
+                💭😀 🔤🧲file_location🧲🔤❗️
+                🖍🆕response 🔡
+                📃🕊📑🔤🧲file_location🧲🔤❗️➡️check
                 
-                💭 split data into list
-                🔫 🍺🔡data❗️ 🔤 🔤 ❗️ ➡️ request_list
-
-                ↪️ 📏request_list❓▶️🙌 3 🍇
-
-                    💭 get the requested file location
-                    🐽 request_list 1❗️ ➡️ requested_file
-
-                    💭 preparing file directory
-                    🔤webroot🧲requested_file🧲🔤 ➡️ file_location
-
-                    💭 default directory points to webroot/index.html
-                    ↪️ file_location 🙌 🔤./webroot/🔤🍇
-                        🔤🧲file_location🧲index.html🔤 ➡️ file_location
-                        😀 🔤🧲file_location🧲🔤❗️
-                    🍉
-
-                    
-                    💭 read from file_location, prepare 404 message if not found
-                    🆗 🍺📇🐇📄 🔤🧲file_location🧲🔤❗️➡️ webpage❗️ 🍇
-                    🍉
-                    🙅 error 🍇
-                        😀 🔤An error occured: 🧲💬error❗️🧲🔤❗️
-                        🔤🧲 🔡errorMsg❗️🧲🔤 ➡️ response
-                    🍉
-
-                    💭 Get the index.html in the same directory :(
-                    💭🍺📇🐇📄 🔤index.html🔤❗️➡️ webpage
-                    💭🍺📇🐇📄 🔤🧲file_location🧲🔤❗️➡️ webpage
-
-                    🔤🧲 🔡sucessMsg❗️🧲🧲🍺 🔡webpage❗️🧲🔤 ➡️ response
-                    😀 🔤🧲 🔡 response❗️🧲🔤❗️
-
-
-                    🆗 💬 clientSocket 📇 response ❗️❗️🍇
-                    🍉
-                    🙅 error 🍇
-                        😀 🔤An error occured: 🧲💬error❗️🧲🔤❗️
-                        🆗 💬 clientSocket 📇 errorMsg ❗️❗️🍇
-                        🍉
-                        🙅 error 🍇
-                            💭😀 🔤An error occured: 🧲💬error❗️🧲🔤❗️
-                        🍉
-                    🍉
+                ↪️check🍇
+                    🍺📇🐇📄 🔤🧲file_location🧲🔤❗️➡️ webpage
+                    🔤🧲 🔡sucessMsg❗️🧲🧲🍺 🔡webpage❗️🧲🔤 ➡️ 🖍response
+                    💭😀 🔤🧲 🔡 response❗️🧲🔤❗️
+                    😀🔤[Sucess] Page found🔤❗️
                 🍉
-                💭🔜
-                💭 elif request < 3
                 🙅 🍇
-                    😀🔤Check your request headers🔤❗️
-                    ↩️↩️
+                    🔤🧲 🔡errorMsg❗️🧲🧲🍺 🔡errorpage❗️🧲🔤 ➡️ 🖍response
+                    💭😀 🔤🧲 🔡 response❗️🧲🔤❗️
+                    😀🔤[Error]  File probably doesn't exist.🔤❗️
                 🍉
-                🔚💭
 
+                🆗 💬 clientSocket 📇 response ❗️❗️🍇
+                    😀🔤[Sucess] Responded with a page.🔤❗️
+                🍉
+                🙅 error 🍇
+                    😀🔤[Error]  🧲💬error❗️🧲🔤❗️
+                    😀🔤[Error]  Problem sending requested page.🔤❗️
+                    🆗 💬 clientSocket 📇 errorMsg ❗️❗️🍇
+                    🍉
+                    🙅 error 🍇
+                        💭😀 🔤[Error]  🧲💬error❗️🧲🔤❗️
+                        🔤🧲 🔡errorMsg❗️🧲🧲🍺 🔡errorpage❗️🧲🔤 ➡️ 🖍response
+                    🍉
+                🍉
             🍉
-            🙅‍♀️ error 🍇
-                😀 🔤An error occured: 🧲💬error❗️🧲🔤❗️
-            🍉
-        🍉 
+        🍉
+        🙅‍♀️ error 🍇
+            😀 🔤[Error]  🧲💬error❗️🧲🔤❗️
+        🍉
     🍉
 🍉
