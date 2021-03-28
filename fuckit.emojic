@@ -3,6 +3,7 @@
 
 📦 sockets 🏠
 📦 files 🏠
+📦 json 🏠
 
 🏁 🍇
 
@@ -22,15 +23,16 @@
         
         🆗 data 👂 clientSocket 1000❗️ 🍇
 
-            😀 🔤🧲🍺 🔡data❗️🧲🔤❗️
+            😀🔤[Sucess] Request received.🔤❗️
+            💭😀 🔤🧲🍺 🔡data❗️🧲🔤❗️
             
             💭 split data into list
             🔫 🍺🔡data❗️ 🔤 🔤 ❗️ ➡️ request_list
 
             ↪️ 📏request_list❓◀️🙌 3 🍇
                 🔤🧲 🔡errorMsg❗️🧲🧲🍺 🔡errorpage❗️🧲🔤 ➡️ response
-                😀 🔤🧲 🔡 response❗️🧲🔤❗️
-                😀🔤Check your request headers🔤❗️
+                💭😀 🔤🧲 🔡 response❗️🧲🔤❗️
+                😀🔤[Error]  Check your request headers!🔤❗️
             🍉
             🙅 🍇
 
@@ -45,37 +47,41 @@
                     🔤🧲file_location🧲index.html🔤 ➡️ 🖍file_location
                 🍉
 
-                😀 🔤🧲file_location🧲🔤❗️
+                💭😀 🔤🧲file_location🧲🔤❗️
                 🖍🆕response 🔡
                 📃🕊📑🔤🧲file_location🧲🔤❗️➡️check
+                💭📃🕊📝🔤🧲file_location🧲🔤❗️➡️readcheck
+                💭🕊📝 🔤🧲file_location🧲🔤❗️ ➡️ readcheck
                 
                 ↪️check🍇
                     🍺📇🐇📄 🔤🧲file_location🧲🔤❗️➡️ webpage
-
                     🔤🧲 🔡sucessMsg❗️🧲🧲🍺 🔡webpage❗️🧲🔤 ➡️ 🖍response
-                    😀 🔤🧲 🔡 response❗️🧲🔤❗️
+                    💭😀 🔤🧲 🔡 response❗️🧲🔤❗️
+                    😀🔤[Sucess] Page found🔤❗️
                 🍉
                 🙅 🍇
                     🔤🧲 🔡errorMsg❗️🧲🧲🍺 🔡errorpage❗️🧲🔤 ➡️ 🖍response
-                    😀 🔤🧲 🔡 response❗️🧲🔤❗️
-                    😀🔤File probably doesn't exist.🔤❗️
+                    💭😀 🔤🧲 🔡 response❗️🧲🔤❗️
+                    😀🔤[Error]  File probably doesn't exist.🔤❗️
                 🍉
 
                 🆗 💬 clientSocket 📇 response ❗️❗️🍇
+                    😀🔤[Sucess] Responded with a page.🔤❗️
                 🍉
                 🙅 error 🍇
-                    😀 🔤An error occured: 🧲💬error❗️🧲🔤❗️
+                    😀🔤[Error]  🧲💬error❗️🧲🔤❗️
+                    😀🔤[Error]  Problem sending requested page.🔤❗️
                     🆗 💬 clientSocket 📇 errorMsg ❗️❗️🍇
                     🍉
                     🙅 error 🍇
-                        💭😀 🔤An error occured: 🧲💬error❗️🧲🔤❗️
+                        💭😀 🔤[Error]  🧲💬error❗️🧲🔤❗️
                         🔤🧲 🔡errorMsg❗️🧲🧲🍺 🔡errorpage❗️🧲🔤 ➡️ 🖍response
                     🍉
                 🍉
             🍉
         🍉
         🙅‍♀️ error 🍇
-            😀 🔤An error occured: 🧲💬error❗️🧲🔤❗️
+            😀 🔤[Error]  🧲💬error❗️🧲🔤❗️
         🍉
     🍉
 🍉
