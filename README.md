@@ -1,6 +1,6 @@
 # Simple Web Server in Emojicode 😃
 
-## 🍇 Installation 🍉
+## 🍇 Installing Emojicode 🍉
 ```
 curl -o emojicode.tar.gz -L https://github.com/emojicode/emojicode/releases/download/v1.0-beta.2/Emojicode-1.0-beta.2-Linux-x86_64.tar.gz \
 && tar -xzf emojicode.tar.gz && rm emojicode.tar.gz \
