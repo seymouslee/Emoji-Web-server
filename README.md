@@ -1,4 +1,4 @@
-# Simple Web Server in Emojicode 
+# Simple Web Server in Emojicode 😃
 
 ## 🍇 Installation 🍉
 ```
