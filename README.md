@@ -14,3 +14,5 @@ Within the same file directoy of server.emojic:
 emojicodec server.emojic
 ./server.emoji
 ``` 
+## Display default Page
+Within the webroot directory, simply change the name of your default page to `index.html`
