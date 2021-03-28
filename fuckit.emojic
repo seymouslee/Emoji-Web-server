@@ -19,65 +19,63 @@
     🔁 👍 🍇
 
         🍺 🙋 server❗️ ➡️ clientSocket
+        
+        🆗 data 👂 clientSocket 1000❗️ 🍇
 
-        🔁 👍 🍇
-            🆗 data 👂 clientSocket 1000❗️ 🍇
+            😀 🔤🧲🍺 🔡data❗️🧲🔤❗️
+            
+            💭 split data into list
+            🔫 🍺🔡data❗️ 🔤 🔤 ❗️ ➡️ request_list
 
-                😀 🔤🧲🍺 🔡data❗️🧲🔤❗️
+            ↪️ 📏request_list❓◀️🙌 3 🍇
+                🔤🧲 🔡errorMsg❗️🧲🧲🍺 🔡errorpage❗️🧲🔤 ➡️ response
+                😀 🔤🧲 🔡 response❗️🧲🔤❗️
+                😀🔤Check your request headers🔤❗️
+            🍉
+            🙅 🍇
+
+                💭 assign list values to variables
+                🐽 request_list 1❗️ ➡️ requested_file
+
+                💭 preparing file directory
+                🔤webroot🧲requested_file🧲🔤 ➡️ 🖍🆕file_location
+
+                💭 default directory points to webroot/index.html
+                ↪️ file_location 🙌 🔤webroot/🔤🍇
+                    🔤🧲file_location🧲index.html🔤 ➡️ 🖍file_location
+                🍉
+
+                😀 🔤🧲file_location🧲🔤❗️
+                🖍🆕response 🔡
+                📃🕊📑🔤🧲file_location🧲🔤❗️➡️check
                 
-                💭 split data into list
-                🔫 🍺🔡data❗️ 🔤 🔤 ❗️ ➡️ request_list
+                ↪️check🍇
+                    🍺📇🐇📄 🔤🧲file_location🧲🔤❗️➡️ webpage
 
-                ↪️ 📏request_list❓◀️🙌 3 🍇
-                    🔤🧲 🔡errorMsg❗️🧲🧲🍺 🔡errorpage❗️🧲🔤 ➡️ response
+                    🔤🧲 🔡sucessMsg❗️🧲🧲🍺 🔡webpage❗️🧲🔤 ➡️ 🖍response
                     😀 🔤🧲 🔡 response❗️🧲🔤❗️
-                    😀🔤Check your request headers🔤❗️
                 🍉
                 🙅 🍇
+                    🔤🧲 🔡errorMsg❗️🧲🧲🍺 🔡errorpage❗️🧲🔤 ➡️ 🖍response
+                    😀 🔤🧲 🔡 response❗️🧲🔤❗️
+                    😀🔤File probably doesn't exist.🔤❗️
+                🍉
 
-                    💭 assign list values to variables
-                    🐽 request_list 1❗️ ➡️ requested_file
-
-                    💭 preparing file directory
-                    🔤webroot🧲requested_file🧲🔤 ➡️ 🖍🆕file_location
-
-                    💭 default directory points to webroot/index.html
-                    ↪️ file_location 🙌 🔤webroot/🔤🍇
-                        🔤🧲file_location🧲index.html🔤 ➡️ 🖍file_location
-                    🍉
-
-                    😀 🔤🧲file_location🧲🔤❗️
-                    🖍🆕response 🔡
-                    📃🕊📑🔤🧲file_location🧲🔤❗️➡️check
-                    
-                    ↪️check🍇
-                        🍺📇🐇📄 🔤🧲file_location🧲🔤❗️➡️ webpage
-
-                        🔤🧲 🔡sucessMsg❗️🧲🧲🍺 🔡webpage❗️🧲🔤 ➡️ 🖍response
-                        😀 🔤🧲 🔡 response❗️🧲🔤❗️
-                    🍉
-                    🙅 🍇
-                        🔤🧲 🔡errorMsg❗️🧲🧲🍺 🔡errorpage❗️🧲🔤 ➡️ 🖍response
-                        😀 🔤🧲 🔡 response❗️🧲🔤❗️
-                        😀🔤Check your request headers🔤❗️
-                    🍉
-
-
-                    🆗 💬 clientSocket 📇 response ❗️❗️🍇
+                🆗 💬 clientSocket 📇 response ❗️❗️🍇
+                🍉
+                🙅 error 🍇
+                    😀 🔤An error occured: 🧲💬error❗️🧲🔤❗️
+                    🆗 💬 clientSocket 📇 errorMsg ❗️❗️🍇
                     🍉
                     🙅 error 🍇
-                        😀 🔤An error occured: 🧲💬error❗️🧲🔤❗️
-                        🆗 💬 clientSocket 📇 errorMsg ❗️❗️🍇
-                        🍉
-                        🙅 error 🍇
-                            💭😀 🔤An error occured: 🧲💬error❗️🧲🔤❗️
-                        🍉
+                        💭😀 🔤An error occured: 🧲💬error❗️🧲🔤❗️
+                        🔤🧲 🔡errorMsg❗️🧲🧲🍺 🔡errorpage❗️🧲🔤 ➡️ 🖍response
                     🍉
                 🍉
             🍉
-            🙅‍♀️ error 🍇
-                😀 🔤An error occured: 🧲💬error❗️🧲🔤❗️
-            🍉
-        🍉 
+        🍉
+        🙅‍♀️ error 🍇
+            😀 🔤An error occured: 🧲💬error❗️🧲🔤❗️
+        🍉
     🍉
 🍉
